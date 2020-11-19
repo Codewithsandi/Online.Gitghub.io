@@ -1,0 +1,212 @@
+/* CSS reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* CSS Variable */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigaction Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* Navigaction Bar:Logo and image */
+#logo{
+    margin: 10px 34px;
+}
+#logo img{
+    height: 60px;
+    margin: 3px 6px;
+}
+
+/* Navigaction Bar: list Styling */
+#navbar ul{
+    display: flex;
+    font-family: 'Lobster', cursive;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;  
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+}
+
+/* home section */
+ 
+  #home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+ #home::before{ 
+    content: "";
+    position: absolute;
+    background:url('../IMG/bg1.jpg') no-repeat center center/cover;
+    height: 642px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+}
+#home p{ 
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Inconsolata', monospace;
+} 
+/* services section */
+  #services{
+    margin: 34px;
+    display: flex;
+}
+ #services .box{ 
+    border: 2px solid brown;
+    padding:34px ;
+    margin:2px 55px ;
+    border-radius: 28px;
+    margin-bottom: 20px;
+    background:#f0e6e6;
+} 
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+} 
+#services .box p{
+    font-family: 'Inconsolata', monospace;
+}
+/* Clint section */
+#client-section{
+    /* height: 488px; */
+    position: relative;
+    /* margin: 18px 14px; */
+}
+#client-section::before{
+   content: "";
+   position: absolute;
+   background: url('../IMG/bg.jpg');
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 34px;
+}
+#clients img{
+    height: 124px;
+}
+/* Contact section */
+#contact{
+    position: relative;
+}
+#contact::before{
+   content: "";
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   z-index: -1;
+   opacity: 0.7;
+   background: url('../IMG/contact.jpg') no-repeat center center/cover;
+}
+#contact-Box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-Box input,
+#contact-Box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-Box form{
+    width: 40%;
+}
+#contact-Box label{
+    font-size: 1.3rem;
+    font-family: 'Inconsolata', monospace;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px 28px;
+}
+/* utilityclass */
+.h-primary{
+    font-family: 'Inconsolata', monospace;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+.h-secondary{ 
+    font-family: 'Inconsolata', monospace;
+    font-size: 2.8rem;
+    padding: 12px;
+}
+
+.btn{
+    padding:6px 20px ;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+} 
+
+
+
+
+
